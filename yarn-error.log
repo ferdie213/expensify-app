@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add numeral
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add firebase
 
 PATH: 
   C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\user-PC\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\user-PC\AppData\Local\Programs\Python\Python38-32\;C:\Users\user-PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\src\flutter\bin;C:\Gradle\gradle-6.5.1\bin;C:\Users\user-PC\AppData\Roaming\npm;C:\Users\user-PC\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin
@@ -14,7 +14,12 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: EPERM: operation not permitted, unlink 'C:\Users\user-PC\Desktop\react-course-projects\expensify-app\node_modules\acorn-dynamic-import\node_modules\.bin'
+  Error: Client network socket disconnected before secure TLS connection was established
+      at connResetException (internal/errors.js:612:14)
+      at TLSSocket.onConnectEnd (_tls_wrap.js:1544:19)
+      at TLSSocket.emit (events.js:326:22)
+      at endReadableNT (_stream_readable.js:1244:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -45,6 +50,7 @@ npm manifest:
       "moment": "2.18.1",
       "node-sass": "^4.14.0",
       "normalize.css": "7.0.0",
+      "numeral": "^2.0.6",
       "raf": "3.3.2",
       "react": "16.1.0",
       "react-addons-shallow-compare": "15.6.0",
@@ -4949,6 +4955,11 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
     integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
+  
+  numeral@^2.0.6:
+    version "2.0.6"
+    resolved "https://registry.yarnpkg.com/numeral/-/numeral-2.0.6.tgz#4ad080936d443c2561aed9f2197efffe25f4e506"
+    integrity sha1-StCAk21EPCVhrtnyGX7//iX05QY=
   
   "nwmatcher@>= 1.3.9 < 2.0.0":
     version "1.4.4"
