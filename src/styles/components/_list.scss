@@ -19,7 +19,8 @@
     border-top: none;
     color: $dark-grey;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: $s-size;
     text-decoration: none;
     transition: background .3s ease;
@@ -54,8 +55,10 @@
     font-size: $font-size-small;
 }
 .list-item__data {
+    color: red;
     margin: $s-size 0 0 0;
     @media (min-width: $desktop-breakpoint) {
+        color: black;
         margin: 0;
         padding-left: $s-size;
     }

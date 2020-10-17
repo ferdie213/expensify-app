@@ -1,9 +1,16 @@
 .text-input {
     border: 1px solid #cacccd;
-    height: 50px;
-    font-size: $font-size-large;
-    font-weight: 300;
-    padding: $s-size;
+    height: 40px;
+    font-size: $font-size-small;
+    font-weight: 150;
+    padding: 0.5rem;
+
+    @media(min-width: $desktop-breakpoint) {
+        height: 50px;
+        font-size: $font-size-large;
+        font-weight: 300;
+        padding: $s-size;
+    }
 }
 
 .select {
