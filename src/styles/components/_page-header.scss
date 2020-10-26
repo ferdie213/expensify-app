@@ -4,8 +4,18 @@
     padding: $l-size 0;
 }
 
+.expense-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .page-header__actions {
     margin-top: $m-size;
+    text-align: center;
+
+    @media (min-width: $desktop-breakpoint) {
+        text-align: justify;
+    }
 }
 
 .page-header__title {
